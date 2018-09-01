@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "image": <i class="fas fa-tired"></i>
+    },
+    {
+        "id": 2,
+        "image": <i class="fas fa-suprise"></i>
+    },
+    {
+        "id": 3,
+        "image": <i class="fas fa-smile-wink"></i>
+    },
+    {
+        "id": 4,
+        "image": <i class="fas fa-smile-beam"></i>
+    },
+    {
+        "id": 5,
+        "image": <i class="fas fa-meh"></i>
+    },
+    {
+        "id": 6,
+        "image": <i class="fas fa-meh-rolling-eyes"></i>
+    },
+    {
+        "id": 7,
+        "image": <i class="fas fa-dizzy"></i>
+    },
+    {
+        "id": 8,
+        "image": <i class="fas fa-grin-stars"></i>
+    },
+    {
+        "id": 9,
+        "image": <i class="fas fa-grin-squint"></i>
+    },
+    {
+        "id": 10,
+        "image": <i class="fas fa-grimace"></i>
+    },
+    {
+        "id": 11,
+        "image": <i class="fas fa-laugh"></i>
+    },
+    {
+        "id": 12,
+        "image": <i class="fas fa-grin-tounge"></i>
+    }
+]
