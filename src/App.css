@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(219, 216, 216);
+  /* background-color: rgb(219, 216, 216); */
 }
 
 .App {
@@ -19,6 +19,14 @@ body {
 
 .App-intro {
   font-size: large;
+}
+.gameWrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 25px 0 50px;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 
 @keyframes App-logo-spin {

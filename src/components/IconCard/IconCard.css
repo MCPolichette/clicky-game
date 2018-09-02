@@ -1,0 +1,9 @@
+.card {
+  width: 150px;
+  text-align: center;
+  margin: 20px;
+}
+.icon-container {
+  /* background-color: grey; */
+  opacity: 0.9;
+}

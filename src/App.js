@@ -7,11 +7,11 @@ import IconCard from "./components/IconCard";
 import cards from "./cards.json";
 // import CSS file.
 import "./App.css";
-import FaceCard from "./components/IconCard/IconCard";
 
 // establish global variables
 let currentScore = 0;
 let topScore = 0;
+let clickedIcons = [];
 
 // Write up Class App.
 class App extends Component {
@@ -19,9 +19,15 @@ class App extends Component {
   state = {
     cards,
     currentScore,
-    topScore
+    topScore,
+    clickedIcons
   };
-
+  iconClick = event => {
+    event.preventDefault();
+    // const chosenIcon = event.target.alt;
+    // const usedIcons = this.state.clickedIcons.indexOf(chosenIcon);
+    this.setState({ currentScore: currentScore++ });
+  };
   // onClick function
   // if else statement, ifs:
   // matches already clicked,
@@ -36,21 +42,22 @@ class App extends Component {
           <h3>Correct Guesses: {this.state.currentScore}</h3>
           <h3>Top Score: {this.state.topScore}</h3>
           <button
-            onClick={console.log("cra")}
+            onClick={this.iconClick}
             className="btn btn-success"
             id="click"
           >
             #
           </button>
         </div>
-        <div className="Container">
-          <div className="row">
-            <div className="col-md-6">
-              {this.state.cards.map(card => (
-                <IconCard id={cards.id} key={cards.id} image={cards.image} />
-              ))}
-            </div>
-          </div>
+        <div className="Container gameWrapper">
+          {this.state.cards.map(cards => (
+            <IconCard
+              id={cards.id}
+              key={cards.id}
+              icon={cards.icon}
+              iconClick={this.IconClick}
+            />
+          ))}
         </div>
       </div>
     );

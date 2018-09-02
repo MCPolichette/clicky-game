@@ -1,66 +1,66 @@
 [
-    {
-        "id": 1,
-        "image": "<i class='fas fa-tired'></i>"
-    },
-    {
-        "id": 2,
-        "image": "<i class='fas fa-suprise'></i>"
-    },
-    {
-        "id": 3,
-        "image": "<i class='fas fa-smile-wink'></i>"
-    },
-    {
-        "id": 4,
-        "image": "<i class='fas fa-smile-beam'></i>"
-    },
-    {
-        "id": 5,
-        "image": "<i class='fas fa-meh'></i>"
-    },
-    {
-        "id": 6,
-        "image": "<i class='fas fa-meh-rolling-eyes'></i>"
-    },
-    {
-        "id": 7,
-        "image": "<i class='fas fa-dizzy'></i>"
-    },
-    {
-        "id": 8,
-        "image": "<i class='fas fa-grin-stars'></i>"
-    },
-    {
-        "id": 9,
-        "image": "<i class='fas fa-grin-squint'></i>"
-    },
-    {
-        "id": 10,
-        "image": "<i class='fas fa-grimace'></i>"
-    },
-    {
-        "id": 11,
-        "image": "<i class='fas fa-laugh'></i>"
-    },
-    {
-        "id": 12,
-        "image": "<i class='fas fa-grin-tounge'></i>"
-    },
-    {
-        "id": 13,
-        "image": "<i class='fas fa-grin-tounge'></i>"
-    },
-    {
-        "id": 14,
-        "image": "<i class='fas fa-grin-tounge'></i>"
-    },
-    {
-        "id": 15,
-        "image": "<i class='fas fa-grin-tounge'></i>"
-    },
-    {
-        "id": 16,
-        "image": "<i class='fas fa-grin-tounge'</i>"
-    }
+  {
+    "id": 1,
+    "icon": "fas fa-tired"
+  },
+  {
+    "id": 2,
+    "icon": "fas fa-grin-hearts"
+  },
+  {
+    "id": 3,
+    "icon": "fas fa-smile-wink"
+  },
+  {
+    "id": 4,
+    "icon": "fas fa-smile-beam"
+  },
+  {
+    "id": 5,
+    "icon": "fas fa-meh"
+  },
+  {
+    "id": 6,
+    "icon": "fas fa-meh-rolling-eyes"
+  },
+  {
+    "id": 7,
+    "icon": "fas fa-dizzy"
+  },
+  {
+    "id": 8,
+    "icon": "fas fa-grin-stars"
+  },
+  {
+    "id": 9,
+    "icon": "fas fa-grin-squint"
+  },
+  {
+    "id": 10,
+    "icon": "fas fa-grimace"
+  },
+  {
+    "id": 11,
+    "icon": "fas fa-laugh"
+  },
+  {
+    "id": 12,
+    "icon": "fas fa-grin-squint-tears"
+  },
+  {
+    "id": 13,
+    "icon": "fas fa-grin-beam-sweat"
+  },
+  {
+    "id": 14,
+    "icon": "fas fa-grin-tears"
+  },
+  {
+    "id": 15,
+    "icon": "fas fa-angry"
+  },
+  {
+    "id": 16,
+    "icon": "fas fa-frown-open"
+  }
 ]
