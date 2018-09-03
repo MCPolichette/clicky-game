@@ -76,8 +76,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="jumbotron">
-          <h1 className="display-4">TEST</h1>
+        <div className="App-header App">
+          <h1>TEST</h1>
           <h3>Correct Guesses: {this.state.currentScore}</h3>
           <h3>Top Score: {this.state.topScore}</h3>
           {/* <button

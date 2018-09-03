@@ -1,5 +1,7 @@
 body {
-  /* background-color: rgb(219, 216, 216); */
+  background-color: black;
+  background-image: url("./images/sandy-millar-750251-unsplash.jpg");
+  background-size: cover;
 }
 
 .App {
