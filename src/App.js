@@ -5,14 +5,24 @@ import IconCard from "./components/IconCard";
 import Footer from "./components/Footer";
 
 // import JSON file containing card-data
-import cards from "./faces.json";
+import faces from "./faces.json";
+import vehicles from "./vehicles.json";
 // import CSS file.
 import "./App.css";
 
 // establish global variables
+let cards = faces;
 let currentScore = 0;
 let topScore = 0;
 let clickedIcons = [];
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 // Write up Class App.
 class App extends Component {
@@ -25,15 +35,43 @@ class App extends Component {
   };
   // onClick function
   iconClick = clickedId => {
-    const usedIcons = this.state.clickedIcons.indexOf(clickedId);
+    const usedIcons = this.state.clickedIcons.indexOf(clickedId) > -1;
+    // console.logs to identify working innards ++++++++++ Remove These +++++++++
     console.log(clickedId);
-    this.setState({ currentScore: currentScore++ });
-  };
+    console.log("usedIcons =" + usedIcons);
+    clickedIcons.push(clickedId);
 
-  // if else statement, ifs:
-  // matches already clicked,
-  // doesnt match click,
-  // win scenario
+    if (usedIcons) {
+      // Lose Scenario.  Reset Game. Shuffle Cards.
+      console.log("Clicked Too Many Times");
+
+      if (currentScore > topScore) {
+        this.setState({ topScore: currentScore });
+      }
+      shuffle(cards);
+      this.setState({
+        currentScore: 0,
+        clickedIcons: []
+      });
+      alert("you lost!");
+    } else if (currentScore < 11) {
+      // Continue Game, Add to Score, Shuffle Cards,
+      shuffle(cards);
+      this.setState({ currentScore: currentScore++ });
+      console.log("CLICKED Once");
+    } else {
+      // Win Scenario. Alert Win. Clear board. Shuffle Cards.
+      alert("YOU WON!");
+      if (currentScore > topScore) {
+        this.setState({ topScore: currentScore });
+      }
+      shuffle(cards);
+      this.setState({
+        currentScore: 0,
+        clickedIcons: []
+      });
+    }
+  };
 
   render() {
     return (
@@ -42,13 +80,13 @@ class App extends Component {
           <h1 className="display-4">TEST</h1>
           <h3>Correct Guesses: {this.state.currentScore}</h3>
           <h3>Top Score: {this.state.topScore}</h3>
-          <button
+          {/* <button
             onClick={this.iconClick}
             className="btn btn-success"
             id="click"
           >
             #
-          </button>
+          </button> */}
         </div>
         <div className="Container gameWrapper">
           {this.state.cards.map(cards => (
@@ -57,6 +95,7 @@ class App extends Component {
               key={cards.id}
               icon={cards.icon}
               iconClick={this.iconClick}
+              picked={cards.picked}
             />
           ))}
         </div>

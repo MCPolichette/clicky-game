@@ -9,7 +9,6 @@ const IconCard = props => (
       value={props.id}
       onClick={() => props.iconClick(props.id)}
     >
-      {props.id}>
       <h1 className="display-1">
         <i className={props.icon} />
       </h1>

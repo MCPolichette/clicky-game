@@ -1,66 +1,82 @@
 [
   {
     "id": 1,
+    "picked": false,
     "icon": "fas fa-tired"
   },
   {
     "id": 2,
+    "picked": false,
     "icon": "fas fa-grin-hearts"
   },
   {
     "id": 3,
+    "picked": false,
     "icon": "fas fa-smile-wink"
   },
   {
     "id": 4,
+    "picked": false,
     "icon": "fas fa-smile-beam"
   },
   {
     "id": 5,
+    "picked": false,
     "icon": "fas fa-meh"
   },
   {
     "id": 6,
+    "picked": false,
     "icon": "fas fa-meh-rolling-eyes"
   },
   {
     "id": 7,
+    "picked": false,
     "icon": "fas fa-dizzy"
   },
   {
     "id": 8,
+    "picked": false,
     "icon": "fas fa-grin-stars"
   },
   {
     "id": 9,
+    "picked": false,
     "icon": "fas fa-grin-squint"
   },
   {
     "id": 10,
+    "picked": false,
     "icon": "fas fa-grimace"
   },
   {
     "id": 11,
+    "picked": false,
     "icon": "fas fa-laugh"
   },
   {
     "id": 12,
+    "picked": false,
     "icon": "fas fa-grin-squint-tears"
   },
   {
     "id": 13,
+    "picked": false,
     "icon": "fas fa-grin-beam-sweat"
   },
   {
     "id": 14,
+    "picked": false,
     "icon": "fas fa-grin-tears"
   },
   {
     "id": 15,
+    "picked": false,
     "icon": "fas fa-angry"
   },
   {
     "id": 16,
+    "picked": false,
     "icon": "fas fa-frown-open"
   }
 ]
