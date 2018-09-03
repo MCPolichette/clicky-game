@@ -2,12 +2,12 @@
   {
     "id": 1,
     "picked": false,
-    "icon": "fas fa-tired"
+    "icon": "fas fa-frown-open"
   },
   {
     "id": 2,
     "picked": false,
-    "icon": "fas fa-grin-hearts"
+    "icon": "fas fa-grin-beam-sweat"
   },
   {
     "id": 3,
@@ -17,7 +17,7 @@
   {
     "id": 4,
     "picked": false,
-    "icon": "fas fa-smile-beam"
+    "icon": "fas fa-angry"
   },
   {
     "id": 5,
@@ -58,25 +58,5 @@
     "id": 12,
     "picked": false,
     "icon": "fas fa-grin-squint-tears"
-  },
-  {
-    "id": 13,
-    "picked": false,
-    "icon": "fas fa-grin-beam-sweat"
-  },
-  {
-    "id": 14,
-    "picked": false,
-    "icon": "fas fa-grin-tears"
-  },
-  {
-    "id": 15,
-    "picked": false,
-    "icon": "fas fa-angry"
-  },
-  {
-    "id": 16,
-    "picked": false,
-    "icon": "fas fa-frown-open"
   }
 ]

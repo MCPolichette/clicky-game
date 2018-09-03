@@ -1,4 +1,8 @@
 body {
+  /* 
+
+
+*/
   background-color: black;
   background-image: url("./images/sandy-millar-750251-unsplash.jpg");
   background-size: cover;
@@ -9,10 +13,13 @@ body {
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  /* font-family: "Love Ya Like A Sister", cursive; */
+  font-family: "Cabin Sketch", cursive;
+
+  /* background-color: #222; */
+  height: 100%;
   padding: 20px;
-  color: white;
+  color: rgba(216, 202, 12, 0.904);
 }
 
 .App-title {
@@ -30,7 +37,10 @@ body {
   justify-content: space-around;
   align-content: flex-start;
 }
-
+.scores {
+  float: left;
+  margin-left: 40px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,12 +1,13 @@
-// import React
+// import React and component files
 import React, { Component } from "react";
-// import component files
 import IconCard from "./components/IconCard";
 import Footer from "./components/Footer";
+// import TestModal from "./components/TestModal";
 
 // import JSON file containing card-data
 import faces from "./faces.json";
 import vehicles from "./vehicles.json";
+
 // import CSS file.
 import "./App.css";
 
@@ -31,8 +32,18 @@ class App extends Component {
     cards,
     currentScore,
     topScore,
-    clickedIcons
+    clickedIcons,
+    modalShow: false
   };
+  showModal = () => {
+    this.setState({ ModalShow: true });
+    console.log("show");
+  };
+
+  hideModal = () => {
+    this.setState({ ModalShow: false });
+  };
+
   // onClick function
   iconClick = clickedId => {
     const usedIcons = this.state.clickedIcons.indexOf(clickedId) > -1;
@@ -77,18 +88,18 @@ class App extends Component {
     return (
       <div>
         <div className="App-header App">
-          <h1>TEST</h1>
-          <h3>Correct Guesses: {this.state.currentScore}</h3>
-          <h3>Top Score: {this.state.topScore}</h3>
-          {/* <button
-            onClick={this.iconClick}
-            className="btn btn-success"
+          <h1 className="display-1">Icon Clicky Game</h1>
+          <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
+          <h3 className="scores">Top Score: {this.state.topScore}</h3>
+          <button
+            onClick={this.showModal}
+            className="btn btn-success scores"
             id="click"
           >
             #
-          </button> */}
+          </button>
         </div>
-        <div className="Container gameWrapper">
+        <div className="container gameWrapper">
           {this.state.cards.map(cards => (
             <IconCard
               id={cards.id}
