@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "icon": "fas fa-bicycle"
+  },
+  {
+    "id": 2,
+    "icon": "fas fa-bus-alt"
+  },
+  {
+    "id": 3,
+    "icon": "fas fa-car"
+  },
+  {
+    "id": 4,
+    "icon": "fas fa-car-side"
+  },
+  {
+    "id": 5,
+    "icon": "fas fa-helicopter"
+  },
+  {
+    "id": 6,
+    "icon": "fas fa-motorcycle"
+  },
+  {
+    "id": 7,
+    "icon": "fas fa-rocket"
+  },
+  {
+    "id": 8,
+    "icon": "fas fa-fighter-jet"
+  },
+  {
+    "id": 9,
+    "icon": "fas fa-ship"
+  },
+  {
+    "id": 10,
+    "icon": "fas fa-truck-monster"
+  },
+  {
+    "id": 11,
+    "icon": "fas fa-truck"
+  },
+  {
+    "id": 12,
+    "icon": "fas fa-paper-plane"
+  },
+  {
+    "id": 13,
+    "icon": "fas fa-train"
+  },
+  {
+    "id": 14,
+    "icon": "fas fa-wheelchair"
+  },
+  {
+    "id": 15,
+    "icon": "fas fa-truck-pickup"
+  },
+  {
+    "id": 16,
+    "icon": "fas fa-walking"
+  }
+]

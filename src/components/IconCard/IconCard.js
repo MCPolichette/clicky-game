@@ -4,11 +4,16 @@ import "./IconCard.css";
 
 const IconCard = props => (
   <div className="card">
-    <div className="icon-container" onClick={props.iconClick}>
+    <div
+      className="icon-container"
+      value={props.id}
+      onClick={() => props.iconClick(props.id)}
+    >
+      {props.id}>
       <h1 className="display-1">
-        <i class={props.icon} />
-        {/* {props.id} */}
+        <i className={props.icon} />
       </h1>
+      {/* <button onClick={() => props.iconClick(props.id)}>{props.id}</button> */}
     </div>
   </div>
 );

@@ -2,9 +2,10 @@
 import React, { Component } from "react";
 // import component files
 import IconCard from "./components/IconCard";
+import Footer from "./components/Footer";
 
 // import JSON file containing card-data
-import cards from "./cards.json";
+import cards from "./faces.json";
 // import CSS file.
 import "./App.css";
 
@@ -22,13 +23,13 @@ class App extends Component {
     topScore,
     clickedIcons
   };
-  iconClick = event => {
-    event.preventDefault();
-    // const chosenIcon = event.target.alt;
-    // const usedIcons = this.state.clickedIcons.indexOf(chosenIcon);
+  // onClick function
+  iconClick = clickedId => {
+    const usedIcons = this.state.clickedIcons.indexOf(clickedId);
+    console.log(clickedId);
     this.setState({ currentScore: currentScore++ });
   };
-  // onClick function
+
   // if else statement, ifs:
   // matches already clicked,
   // doesnt match click,
@@ -55,10 +56,11 @@ class App extends Component {
               id={cards.id}
               key={cards.id}
               icon={cards.icon}
-              iconClick={this.IconClick}
+              iconClick={this.iconClick}
             />
           ))}
         </div>
+        <Footer />
       </div>
     );
   }

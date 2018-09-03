@@ -2,8 +2,16 @@
   width: 150px;
   text-align: center;
   margin: 20px;
+  border: none;
 }
 .icon-container {
-  /* background-color: grey; */
+  background-color: black;
   opacity: 0.9;
+  color: rgb(236, 213, 4);
+  padding: 10px;
+  border-radius: 80px;
+}
+.icon-container:hover {
+  background-color: blue;
+  size: 110%;
 }
