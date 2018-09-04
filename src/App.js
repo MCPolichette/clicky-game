@@ -11,29 +11,26 @@ import vehicles from "./vehicles.json";
 // import CSS file.
 import "./App.css";
 
-// establish global variables
-let cards = faces;
-let currentScore = 0;
-let topScore = 0;
-let clickedIcons = [];
-
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 // Write up Class App.
 class App extends Component {
   // Establish state at the beginning of the class
   state = {
-    cards,
-    currentScore,
-    topScore,
-    clickedIcons,
+    cards: faces,
+    currentScore: 0,
+    topScore: 0,
+    clickedIcons: [],
     modalShow: false
+  };
+
+  shuffle = () => {
+    // Copy the cards array to get a new array so React Detects the change.
+    const cards = [].concat(this.state.cards);
+    // Shuffles the cards
+    for (let i = cards.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    this.setState({ cards });
   };
   showModal = () => {
     this.setState({ ModalShow: true });
@@ -43,14 +40,19 @@ class App extends Component {
   hideModal = () => {
     this.setState({ ModalShow: false });
   };
-
+  resetGame = () => {
+    this.setState({
+      currentScore: 0,
+      clickedIcons: []
+    });
+  };
   // onClick function
   iconClick = clickedId => {
+    const { currentScore, topScore, clickedIcons } = this.state;
     const usedIcons = this.state.clickedIcons.indexOf(clickedId) > -1;
     // console.logs to identify working innards ++++++++++ Remove These +++++++++
     console.log(clickedId);
     console.log("usedIcons =" + usedIcons);
-    clickedIcons.push(clickedId);
 
     if (usedIcons) {
       // Lose Scenario.  Reset Game. Shuffle Cards.
@@ -59,28 +61,26 @@ class App extends Component {
       if (currentScore > topScore) {
         this.setState({ topScore: currentScore });
       }
-      shuffle(cards);
-      this.setState({
-        currentScore: 0,
-        clickedIcons: []
-      });
+      this.shuffle();
+      this.resetGame();
       alert("you lost!");
     } else if (currentScore < 11) {
       // Continue Game, Add to Score, Shuffle Cards,
-      shuffle(cards);
-      this.setState({ currentScore: currentScore++ });
+      this.shuffle();
       console.log("CLICKED Once");
+      const newClickedIcons = [].concat(clickedIcons, clickedId);
+      this.setState({
+        currentScore: currentScore + 1,
+        clickedIcons: newClickedIcons
+      });
     } else {
       // Win Scenario. Alert Win. Clear board. Shuffle Cards.
       alert("YOU WON!");
       if (currentScore > topScore) {
         this.setState({ topScore: currentScore });
       }
-      shuffle(cards);
-      this.setState({
-        currentScore: 0,
-        clickedIcons: []
-      });
+      this.shuffle();
+      this.resetGame();
     }
   };
 
@@ -93,7 +93,7 @@ class App extends Component {
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
           <button
             onClick={this.showModal}
-            className="btn btn-success scores"
+            className="btn btn-success"
             id="click"
           >
             #

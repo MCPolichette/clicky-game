@@ -20,6 +20,7 @@ body {
   height: 100%;
   padding: 20px;
   color: rgba(216, 202, 12, 0.904);
+  text-shadow: 4px 4px 8px #000000;
 }
 
 .App-title {
