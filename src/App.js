@@ -21,7 +21,10 @@ class App extends Component {
     clickedIcons: [],
     modalShow: false
   };
-
+  iconChange = () => {
+    // this function doesnt work to change the json list used to generate icons.
+    this.setState({ cards: vehicles });
+  };
   shuffle = () => {
     // Copy the cards array to get a new array so React Detects the change.
     const cards = [].concat(this.state.cards);
@@ -92,7 +95,7 @@ class App extends Component {
           <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
           <button
-            onClick={this.showModal}
+            // onClick={this.iconChange()}
             className="btn btn-success"
             id="click"
           >
