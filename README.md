@@ -2,7 +2,7 @@
 
 ### (My first react build!)
 
-![Game Example](/ReadMeImage/GameExample.gif)
+![Game Example](/ReadMeImages/GameExample.gif)
 
 ## Overview:
 
@@ -27,12 +27,12 @@ This is a memory game I built using React. It breaks up the user interface into 
 ## What I've learned.
 
 Although I've made better apps using other methods, I can see the value of using React for more complex and larger applications. All the code I wrote for setting up the icons could have been loaded with a lot more info than just their Id and source image.
-![Icon Card](/ReadMeImage/icon-card-js.PNG)
-![Icon in App.js](/ReadMeImage/icon-in-app.PNG)
+![Icon Card](./ReadMeImages/icon-card-js.PNG)
+![Icon in App.js](./ReadMeImages/icon-in-app.PNG)
 
 React listens for specific state-changes and builds with Components.
-![Setting the State](/ReadMeImage/setSTateExample.PNG)
-![SetState Example](/ReadMeImage/setting-the-State.PNG)
+![Setting the State](./ReadMeImages/setSTateExample.PNG)
+![SetState Example](./ReadMeImages/setting-the-State.PNG)
 
 ## The future of this app and build:
 
