@@ -8,9 +8,19 @@ This is a memory game I built using React. It breaks up the user interface into 
 
 ## [Play The Game](https://https://MCPolichette.github.io/clicky-game)
 
-## Technologies used (Or, How React Works) :
+## Technologies used and credits:
 
-React! This is a barebones build as I explored the methods of how React Works.
+### Thank you to:
+
+1. React!
+   The primary reason for this exercise.
+2. Bootstrap
+   CSS framework used to clean up and organize my divs better
+3. Font Awesome
+   Providing the Icons used in the clicky game.
+4. Google Fonts
+   Providing that awesome title text.
+5. The background photograph was taken by <strong>Sandy Millar</strong>. And is available at [Unsplash](www.unsplash.com).
 
 ## What I've learned.
 
