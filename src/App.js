@@ -94,13 +94,13 @@ class App extends Component {
           <h1 className="display-1">Icon Clicky Game</h1>
           <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
-          <button
+          {/* <button
             // onClick={this.iconChange()}
             className="btn btn-success"
             id="click"
           >
-            #
-          </button>
+            Change to Vehicles
+          </button> */}
         </div>
         <div className="container gameWrapper">
           {this.state.cards.map(cards => (
