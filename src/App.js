@@ -22,14 +22,16 @@ class App extends Component {
     clickedIcons: [],
     modalShow: false
   };
-  iconChange = () => {
-    // this function doesnt work to change the json list used to generate icons.
+  iconChange = iconType => {
+    // +++++++++++++++++++++++++++++++++switch statement+++++++++++++
     let cards = this.state.cards;
-    // if ((cards = vehicles)) {
-    //   cards = faces;
-    // } else if ((cards = faces)) {
-    cards = vehicles;
-    // }
+    if (iconType === "vehicles") {
+      cards = vehicles;
+    }
+    if (iconType === "faces") {
+      cards = faces;
+    }
+    // cards = iconType;
     this.setState({ cards });
   };
   shuffle = () => {
@@ -101,11 +103,11 @@ class App extends Component {
           <h1 className="display-1">Icon Clicky Game</h1>
           <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
-          <IconButton onClick={this.iconChange}>
+          <IconButton iconType="vehicles" iconChange={this.iconChange}>
             <i className="fas fa-car" />
           </IconButton>
-          <IconButton onClick={() => this.iconChange(vehicles)}>
-            Change to Vehicles
+          <IconButton iconType="faces" iconChange={this.iconChange}>
+            <i className="fas fa-smile" />
           </IconButton>
         </div>
         <div className="container gameWrapper">

@@ -9,7 +9,7 @@
   },
   {
     "id": 3,
-    "icon": "fas fa-car"
+    "icon": "fas fa-train"
   },
   {
     "id": 4,
@@ -45,22 +45,6 @@
   },
   {
     "id": 12,
-    "icon": "fas fa-paper-plane"
-  },
-  {
-    "id": 13,
-    "icon": "fas fa-train"
-  },
-  {
-    "id": 14,
     "icon": "fas fa-wheelchair"
-  },
-  {
-    "id": 15,
-    "icon": "fas fa-truck-pickup"
-  },
-  {
-    "id": 16,
-    "icon": "fas fa-walking"
   }
 ]
