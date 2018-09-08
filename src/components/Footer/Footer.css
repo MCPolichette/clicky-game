@@ -26,6 +26,7 @@
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   float: right;
+  margin-right: 10px;
 }
 .bottom-center {
   color: white;
