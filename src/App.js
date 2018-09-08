@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import IconCard from "./components/IconCard";
 import Footer from "./components/Footer";
+import IconButton from "./components/IconButton";
 // import TestModal from "./components/TestModal";
 
 // import JSON file containing card-data
@@ -23,7 +24,13 @@ class App extends Component {
   };
   iconChange = () => {
     // this function doesnt work to change the json list used to generate icons.
-    this.setState({ cards: vehicles });
+    let cards = this.state.cards;
+    // if ((cards = vehicles)) {
+    //   cards = faces;
+    // } else if ((cards = faces)) {
+    cards = vehicles;
+    // }
+    this.setState({ cards });
   };
   shuffle = () => {
     // Copy the cards array to get a new array so React Detects the change.
@@ -94,13 +101,12 @@ class App extends Component {
           <h1 className="display-1">Icon Clicky Game</h1>
           <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
-          {/* <button
-            // onClick={this.iconChange()}
-            className="btn btn-success"
-            id="click"
-          >
+          <IconButton onClick={this.iconChange}>
+            <i className="fas fa-car" />
+          </IconButton>
+          <IconButton onClick={() => this.iconChange(vehicles)}>
             Change to Vehicles
-          </button> */}
+          </IconButton>
         </div>
         <div className="container gameWrapper">
           {this.state.cards.map(cards => (

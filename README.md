@@ -27,10 +27,12 @@ This is a memory game I built using React. It breaks up the user interface into 
 ## What I've learned.
 
 Although I've made better apps using other methods, I can see the value of using React for more complex and larger applications. All the code I wrote for setting up the icons could have been loaded with a lot more info than just their Id and source image.
+
 ![Icon Card](./ReadMeImages/icon-card-js.PNG)
-![Icon in App.js](./ReadMeImages/icon-in-appjs.PNG)
+![Icon in App](./ReadMeImages/Icon-in-appjs.PNG)
 
 React listens for specific state-changes and builds with Components.
+
 ![Setting the State](./ReadMeImages/setStateExample.PNG)
 ![SetState Example](./ReadMeImages/Setting-the-State.PNG)
 
