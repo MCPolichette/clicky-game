@@ -8,7 +8,7 @@
 
 This is a memory game I built using React. It breaks up the user interface into components and manages them in such a way to respond to the user's clicks.
 
-## [Play The Game](https://https://MCPolichette.github.io/clicky-game)
+## [Play The Game](https://MCPolichette.github.io/clicky-game)
 
 ## Technologies used and credits:
 
