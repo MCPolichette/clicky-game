@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "picked": false,
+    "icon": "fab fa-slack"
+  },
+  {
+    "id": 2,
+    "picked": false,
+    "icon": "fab fa-android"
+  },
+  {
+    "id": 3,
+    "picked": false,
+    "icon": "fab fa-apple"
+  },
+  {
+    "id": 4,
+    "picked": false,
+    "icon": "fab fa-bitcoin"
+  },
+  {
+    "id": 5,
+    "picked": false,
+    "icon": "fab fa-reddit"
+  },
+  {
+    "id": 6,
+    "picked": false,
+    "icon": "fab fa-steam"
+  },
+  {
+    "id": 7,
+    "picked": false,
+    "icon": "fab fa-facebook"
+  },
+  {
+    "id": 8,
+    "picked": false,
+    "icon": "fab fa-snapchat"
+  },
+  {
+    "id": 9,
+    "picked": false,
+    "icon": "fab fa-github"
+  },
+  {
+    "id": 10,
+    "picked": false,
+    "icon": "fab fa-grav"
+  },
+  {
+    "id": 11,
+    "picked": false,
+    "icon": "fab fa-hooli"
+  },
+  {
+    "id": 12,
+    "picked": false,
+    "icon": "fab fa-twitter-square"
+  }
+]

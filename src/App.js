@@ -6,8 +6,9 @@ import IconButton from "./components/IconButton";
 // import TestModal from "./components/TestModal";
 
 // import JSON file containing card-data
-import faces from "./faces.json";
-import vehicles from "./vehicles.json";
+import faces from "./data/faces.json";
+import vehicles from "./data/vehicles.json";
+import brands from "./data/brands.json";
 
 // import CSS file.
 import "./App.css";
@@ -31,9 +32,16 @@ class App extends Component {
     if (iconType === "faces") {
       cards = faces;
     }
+    if (iconType === "brands") {
+      cards = brands;
+    }
     // cards = iconType;
     this.setState({ cards });
+    this.resetGame();
+
+    alert("Starting a new game with your new Icons!");
   };
+
   shuffle = () => {
     // Copy the cards array to get a new array so React Detects the change.
     const cards = [].concat(this.state.cards);
@@ -44,6 +52,7 @@ class App extends Component {
     }
     this.setState({ cards });
   };
+
   showModal = () => {
     this.setState({ ModalShow: true });
     console.log("show");
@@ -104,10 +113,13 @@ class App extends Component {
           <h3 className="scores">Correct Guesses: {this.state.currentScore}</h3>
           <h3 className="scores">Top Score: {this.state.topScore}</h3>
           <IconButton iconType="vehicles" iconChange={this.iconChange}>
-            <i className="fas fa-car" />
+            <i className="fas fa-car" /> Vehicles
           </IconButton>
           <IconButton iconType="faces" iconChange={this.iconChange}>
-            <i className="fas fa-smile" />
+            <i className="fas fa-smile" /> Faces
+          </IconButton>
+          <IconButton iconType="brands" iconChange={this.iconChange}>
+            <i className="fab fa-apple" /> Brands
           </IconButton>
         </div>
         <div className="container gameWrapper">

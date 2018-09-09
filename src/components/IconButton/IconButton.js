@@ -5,7 +5,7 @@ import "./IconButton.css";
 const IconButton = props => (
   <button
     {...props}
-    className="btn btn-lg btn-success"
+    className="btn btn-xl btn-primary"
     onClick={() => props.iconChange(props.iconType)}
   >
     {props.children}
