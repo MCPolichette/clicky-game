@@ -12,7 +12,6 @@ const IconCard = props => (
       <h1 className="display-1">
         <i className={props.icon} />
       </h1>
-      {/* <button onClick={() => props.iconClick(props.id)}>{props.id}</button> */}
     </div>
   </div>
 );

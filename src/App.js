@@ -24,7 +24,6 @@ class App extends Component {
     modalShow: false
   };
   iconChange = iconType => {
-    // +++++++++++++++++++++++++++++++++switch statement+++++++++++++
     let cards = this.state.cards;
     if (iconType === "vehicles") {
       cards = vehicles;
