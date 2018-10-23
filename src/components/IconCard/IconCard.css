@@ -9,7 +9,7 @@
 .icon-container {
   background-color: black;
   opacity: 0.95;
-  color: rgb(236, 213, 4);
+  color: rgb(236, 213, 4, 1.9);
   padding: 10px;
   padding-top: 18px;
   border-radius: 80px;
@@ -19,7 +19,7 @@
   -o-transition-duration: 0.5s;
 }
 .icon-container:hover {
-  background-color: rgb(13, 10, 190);
+  background-color: rgb(18, 16, 112);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
