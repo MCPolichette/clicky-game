@@ -9,7 +9,7 @@ const Footer = props => (
         <div className="bottom-name">Mark Polichette</div>
       </a>
       <div className="bottom-nav">
-        <a href="http://MCPolichette.github.io">
+        <a href="http://github.com/MCPolichette">
           <i id="social-git" className="fab fa-github-square fa-3x social" />
         </a>
         <a href="https://www.linkedin.com/in/mark-polichette/">
